@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+nav{
+  background-color: black;
+  padding: 15px 30px;
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+#name{
+    color: rgb(36, 36, 218);
+}
+.nav_links{
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+}
+a{
+    color:rgb(176, 176, 247);
+    text-decoration: none;
+    font-size: 16px;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+header{
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 2rem;
+    text-align: center;
+}
+#img_sec{
+    width: 180px;
+    height: 180px;
+    background-color: blue;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgb(36, 36, 218);
+}
+#intro,span{
+    font-family: Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+    color:rgb(36, 36, 218);
+}
+.container{
+    height: 10cm;
+    margin: 10px;
+    padding: 50px;
+    background-color: rgb(100, 97, 97);
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    gap:30px;
+    border-radius: 10px;
+    margin-bottom: 4cm;
+    margin-top: 1cm;
+}
+.skills{
+    height: 150px;
+    width: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    align-content:space-evenly;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    gap:8px;
+
+}
+/* 4. Mobile Responsiveness (Screens 768px and smaller) */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 15px;
+    }
+
+    .nav_links {
+        gap: 15px; /* Reduces link gap on small screens */
+    }
+
+    a {
+        font-size: 14px; /* Slightly smaller text for links */
+    }
+
+    #hero {
+        font-size: 1.4rem; /* Shrinks large heading text to fit phone screens */
+    }
+
+    #img_sec {
+        width: 140px; /* Scales down image for mobile */
+        height: 140px;
+    }
+}

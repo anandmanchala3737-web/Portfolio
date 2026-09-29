@@ -1,0 +1,174 @@
+/* 1. Theme Variables & Global Reset */
+:root {
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --primary: #4a62fe;
+    --text-main: #ffffff;
+    --text-muted: #b0b0f7;
+    --nav-bg: #0a0a0a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Correct placement for smooth anchor scrolling */
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 2. Navigation Bar */
+nav {
+    background-color: var(--nav-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav_links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav_links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav_links a:hover {
+    color: var(--text-main);
+}
+
+/* Dark Mode Toggle Button */
+#toggle {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+#toggle:hover {
+    background-color: var(--primary);
+}
+
+/* 3. Hero Section */
+header {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+}
+
+#img_sec {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+    box-shadow: 0 0 20px rgba(74, 98, 254, 0.3);
+}
+
+#intro span, #typewriter {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* 4. Content Containers */
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* 5. Modern Skill Badges */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background-color: rgba(74, 98, 254, 0.15);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    background-color: var(--primary);
+    color: var(--text-main);
+}
+
+/* 6. Responsive Mobile View */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav_links {
+        gap: 1.2rem;
+    }
+
+    .container {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem;
+    }
+
+    #img_sec {
+        width: 130px;
+        height: 130px;
+    }
+}
