@@ -120,8 +120,6 @@ a{
 .container{
     max-width: 1100px;
     padding: 5rem 7%;
-    /* align-items: center; */
-    /* height: 4rem; */
 }
 .container h1{
     /* font-size: 2rem; */
@@ -131,7 +129,7 @@ a{
 h1 span{
     color: rgb(36, 36, 218);
 }
-.about-con ,.skills,.project_block{
+.about-con ,.skills,.project_block,.contact{
     padding: 2rem;
     border-radius: 1.2rem;
     border:1px solid #e2e5f0;
@@ -212,6 +210,73 @@ h1 span{
     background-color: rgb(110, 110, 230);
     border: none;
     border-radius: 10px;
+}
+.contact{
+    margin: auto;
+    width: 675px;
+    height: 500px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2rem;
+    /* background-color: #e2e5f0; */
+    border:1px solid #e2e5f0;
+    box-shadow: 0 15px 40px rgba(37, 45, 85, 0.12);
+    border-radius: 1.2rem;
+}
+.form_contents{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.form_content{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+lable{
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+#subject{
+    width: 575px;
+    height: 70px;
+}
+.form_content input{
+    width: 297px;
+    height: 60.8px;
+    border-radius: 10px;
+    border: 1px solid rgb(78, 66, 66);
+}
+input::placeholder{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+textarea{
+    width: 575px;
+    height: 100px;
+    border-radius: 10px;
+    resize: none;
+    border: 1px solid rgb(78, 66, 66);
+}
+textarea::placeholder{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.submit_btn{
+    width: 220px;
+    height: 62px;
+    margin-top: 15px;
+    /* border-radius: 10px; */
+    border: 1px solid rgb(78, 66, 66); 
+    background-color: black;
+    color: #e2e5f0;
+    font-size: 20px;
 }
 footer{
     height: 25px;

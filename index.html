@@ -15,7 +15,7 @@
             <li><a href="#About">About</a ></li>
             <li><a href="#skills">Skills</a ></li>
             <li><a href="#project">projects</a ></li>
-            <li><a href="#">Contact</a ></li>
+            <li><a href="#Contact">Contact</a ></li>
         </ul>
         <button id="toggle">🌙</button>
     </nav>
@@ -104,6 +104,35 @@
             </div>
                 <button class="project_view" onclick="window.open('https://github.com/anandmanchala3737-web/Portfolio', '_blank')">View on GitHub</button>
         </div>
+    </section>
+    <section id="Contact" class="container">
+        <h1>Contact me</h1>
+        <form action="http://formsubmit.co/anandmanchala3737@gmail.com" method="POST" class="contact">
+            <div class="form_contents">
+                            <div class="form_content">
+                <lable for="name">FULL NAME</lable>
+                <input type="text" id="name" name="name" placeholder="Jhon">
+            </div>
+            
+            <div class="form_content">
+                <lable for="email">EMAIL ADDRESS</lable>
+                <input type="email" id="email" name="email" placeholder="Jhon@gmail.com">
+            </div>
+            </div>
+
+            <div class="form_content">
+                <lable for="subject">SUBJECT</lable>
+                <input type="text" id="subject" name="subject" placeholder="Your subject">
+            </div>
+
+            <div class="form_content">
+                <lable for="textarea">YOUR MASSAGE</lable>
+                <textarea type="text" id="textarea" name="message" placeholder="Write your massage"></textarea>
+            </div>
+
+            <button type="submit" class="submit_btn">Send me message</button>
+
+        </form>
     </section>
     </main>
     <footer>
