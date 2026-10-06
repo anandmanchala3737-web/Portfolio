@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
         <div class="hero-content">
         <p id="welcome">Welcome to my portfolio</p>
         <h1 id="intro">Hi, I'am </h1>
-        <span id="hero-name">Anand.</span>
+        <span id="hero-name" onclick="window.open(`https://www.linkedin.com/in/anand-manchala`)">Anand.</span>
         <p>Hi, I'm
             <span id="typewriter">Software developer.</span>
             who enjoys building clean and useful digital experiences.
@@ -86,6 +87,7 @@
                 AstroVault is a console-based Java application that provides detailed information about the planets in our Solar System and performs useful astronomical calculations. Users can explore planetary properties and calculate values such as gravitational field strength, escape velocity, and other important physical quantities.
             </p>
             <div class="tags">
+                <p>Tech Stack:</p>
                 <span>Java</span>
                 <span>OPPS</span>
                 <span>Collection Framework</span>
@@ -98,6 +100,7 @@
                 This portfolio is my second project, and I created it while learning from my mistakes and improving my web development skills. It may still have some mistakes or areas that need improvement, and you may have already realized that you are looking at it right now. 😄
             </p>
             <div class="tags">
+                <p>Tech Stack:</p>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
@@ -107,7 +110,7 @@
     </section>
     <section id="Contact" class="container">
         <h1>Contact me</h1>
-        <form action="https://formsubmit.co/anandmanchala3737@gmail.com" method="POST" class="contact">
+        <form action="https://formsubmit.co/27138b1b6b39f8a9e0fcb1040eabfa31" method="POST" class="contact">
             <div class="form_contents">
                             <div class="form_content">
                 <lable for="name">FULL NAME</lable>
@@ -131,9 +134,17 @@
             </div>
 
             <button type="submit" class="submit_btn">Send me message</button>
-           <input type="hidden" name="_blank" value="https://anandmanchala3737-web.github.io/Portfolio/">
         </form>
+            <div class="social">
+                <h2>Social Network</h2>
+                <div class="social_icons">
+                    <div onclick="window.open(`https://github.com/anandmanchala3737-web`)"><i class="fa-brands fa-github"></i></div>
+                    <div onclick="window.open(`https://www.linkedin.com/in/anand-mancha`)"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <div onclick="window.open(`https://instagram.com`)"><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
     </section>
+
     </main>
     <footer>
         <p>© 2026 Anand. Built with HTML, CSS and JavaScript.</p>

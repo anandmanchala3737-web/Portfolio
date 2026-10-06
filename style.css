@@ -39,9 +39,12 @@ a{
     text-decoration: none;
     font-size: 16px;
 }
+a:hover{
+    color: rgb(59, 192, 233);
+}
 #toggle{
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
     display: grid;
     place-items: center;
     align-items: center;
@@ -51,7 +54,11 @@ a{
     border: 10px soild black;
     cursor: pointer;
     font-size: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    transition: transform 0.3s ease;
+}
+#toggle:hover{
+    transform: scale(1.03);
 }
 .hero{
     display: grid;
@@ -75,6 +82,11 @@ a{
     color: rgb(36, 36, 218);
     font-size: 4rem;
     font-weight: bold;
+    transition: font-size 0.3s ease 1s;
+}
+#hero-name:hover{
+    font-size: 4.1rem;
+    cursor: pointer;
 }
 .hero p{
     font-size: 1.5rem;
@@ -96,6 +108,10 @@ a{
     display: grid;
     align-items: center;
     place-items: center;
+    transition: transform 0.2s ease;
+}
+.img-sec:hover{
+    transform: scale(1.01);
 }
 .img-ring{
     grid-column: 1/2;
@@ -134,6 +150,7 @@ h1 span{
     border-radius: 1.2rem;
     border:1px solid #e2e5f0;
     box-shadow: 0 15px 40px rgba(37, 45, 85, 0.12);
+    transform: scale(0.95);
 }
 .s{
     color: rgb(36, 36, 218);
@@ -144,19 +161,20 @@ h1 span{
 .skills{
     display: flex;
     flex-wrap: wrap;
-    gap:1rem;
+    justify-content: center;
+    gap:2rem;
 }
 .skill-tag img{
-    width: 100px;
+    width: 50px;
     grid-area: img;
 }
 .skill-tag h5{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     grid-area: h5;
 }
 .skill-tag{
-    width: 18%;
-    height: 160px;
+    width: 10%;
+    height: 120px;
     border-radius: 1.2rem;
     border:1px solid #e2e5f0;
     padding: 1rem;
@@ -169,6 +187,10 @@ h1 span{
     justify-items: center;
     align-items: center;
     gap: 1rem;
+    transition: transform 0.3s ease;
+}
+.skill-tag:hover{
+    transform: scale(1.03);
 }
 #project{
     display: grid;
@@ -198,7 +220,7 @@ h1 span{
 }
 .tags span{
     display: inline;
-    background-color: #6f8bf0;
+    background-color: #8e9ed7;
     color: rgb(36, 36, 218);
     margin-right: 15px;
     padding: 5px;
@@ -210,6 +232,10 @@ h1 span{
     background-color: rgb(110, 110, 230);
     border: none;
     border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.project_view:hover{
+    transform: scale(1.03);
 }
 .contact{
     margin: auto;
@@ -245,16 +271,23 @@ lable{
     width: 575px;
     height: 70px;
 }
-.form_content input{
+input{
     width: 297px;
     height: 60.8px;
     border-radius: 10px;
     border: 1px solid rgb(78, 66, 66);
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+    transition: transform 0.3s ease;
 }
 input::placeholder{
     text-align: left;
     padding-left: 10px;
     font-size: 20px;
+}
+input:hover{
+    transform: scale(1.03);
 }
 textarea{
     width: 575px;
@@ -262,11 +295,19 @@ textarea{
     border-radius: 10px;
     resize: none;
     border: 1px solid rgb(78, 66, 66);
-}
-textarea::placeholder{
     text-align: left;
     padding-left: 10px;
     font-size: 20px;
+    transition: transform 0.3s ease;
+}
+textarea::placeholder{
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+textarea:hover{
+    transform: scale(1.03);
 }
 .submit_btn{
     width: 220px;
@@ -277,6 +318,23 @@ textarea::placeholder{
     background-color: black;
     color: #e2e5f0;
     font-size: 20px;
+    transition: transform 1s ease 0.3s;
+}
+.submit_btn:hover{
+    background-color: white;
+    color: black;
+}
+.social_icons{
+    margin-top: 10px;
+    font-size: 2.5rem;
+    display: flex;
+    gap:2.5rem;
+}
+.social{
+    margin-top: 30px;
+    font-size: 2rem;
+    align-items: center;
+    justify-items: center;
 }
 footer{
     height: 25px;
@@ -284,4 +342,144 @@ footer{
     text-align: center;
     padding: 2rem;
     font-size: 1rem;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* ------------------------------------------
+   1. Laptops / Small Desktops (max-width: 1024px)
+   ------------------------------------------ */
+@media screen and (max-width: 1024px) {
+  .hero {
+    gap: 2rem;
+    padding: 50px 5%;
+  }
+
+  #intro, #hero-name {
+    font-size: 3rem;
+  }
+
+  #img_sec {
+    width: 300px;
+    height: 300px;
+  }
+
+  .img-ring {
+    width: 360px;
+    height: 360px;
+  }
+
+  .skill-tag {
+    width: 30%; /* 3 columns for skill cards */
+  }
+
+  #project {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for projects */
+  }
+}
+
+/* ------------------------------------------
+   2. Tablets / Portrait Mode (max-width: 768px)
+   ------------------------------------------ */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 1rem 5%;
+  }
+
+  .nav_links {
+    gap: 15px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr; /* Stack hero layout vertically */
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  #intro, #hero-name {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 3rem 5%;
+  }
+
+  /* .skill-tag {
+    width: 45%; /* 2 columns for skill cards */
+  */
+
+  #project {
+    grid-template-columns: 1fr; /* 1 column for projects */
+  }
+
+  .project_block {
+    width: 100%; /* Flexible width to prevent overflow */
+    box-sizing: border-box;
+  }
+
+  .contact {
+    width: 100%; /* Flexible width for contact form */
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .form_contents {
+    flex-direction: column; /* Stack input fields vertically */
+  }
+
+  .form_content input,
+  #subject,
+  textarea {
+    width: 100%; /* Scale form elements to container width */
+    box-sizing: border-box;
+  }
+}
+
+/* ------------------------------------------
+   3. Small Mobile Phones (max-width: 480px)
+   ------------------------------------------ */
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav_links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  #intro, #hero-name {
+    font-size: 2rem;
+  }
+
+  #img_sec {
+    width: 220px;
+    height: 220px;
+  }
+
+  .img-ring {
+    width: 270px;
+    height: 270px;
+  }
+
+  /* .skill-tag {
+    width: 100%; /* 1 full-width column for skills */
+   */
+
+  .submit_btn {
+    width: 100%; /* Full-width submit button */
+  }
 }
