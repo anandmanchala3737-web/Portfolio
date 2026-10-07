@@ -193,15 +193,11 @@ h1 span{
     transform: scale(1.03);
 }
 #project{
-    display: grid;
-    /* justify-content: space-evenly;
-    align-items: center;
-    gap:10px; */
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap:10px;
 }
 .project_block{
-    width: 342.75px;
     width: 395.16px;
     display: grid;
     grid-template-columns: 1fr;
@@ -329,6 +325,9 @@ textarea:hover{
     font-size: 2.5rem;
     display: flex;
     gap:2.5rem;
+}
+.social_icons:hover{
+    cursor: pointer;
 }
 .social{
     margin-top: 30px;
