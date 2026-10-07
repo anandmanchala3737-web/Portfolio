@@ -194,7 +194,7 @@ h1 span{
 }
 #project{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap:10px;
 }
 .project_block{
