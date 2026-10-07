@@ -162,7 +162,8 @@ h1 span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:2rem;
+    gap:10px;
+    padding-top: 10px;
 }
 .skill-tag img{
     width: 50px;
@@ -193,9 +194,9 @@ h1 span{
     transform: scale(1.03);
 }
 #project{
-    display: flex;
-    flex-wrap: wrap;
-    gap:10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
 }
 .project_block{
     width: 395.16px;
