@@ -375,9 +375,6 @@ footer{
     width: 30%; /* 3 columns for skill cards */
   }
 
-  #project {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for projects */
-  }
 }
 
 /* ------------------------------------------
@@ -400,6 +397,7 @@ footer{
     grid-template-columns: 1fr; /* Stack hero layout vertically */
     text-align: center;
     padding: 40px 5%;
+    padding-top: 20px;
   }
 
   #intro, #hero-name {
