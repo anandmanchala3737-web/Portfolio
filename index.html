@@ -87,8 +87,8 @@
             <p>
                 AstroVault is a console-based Java application that provides detailed information about the planets in our Solar System and performs useful astronomical calculations. Users can explore planetary properties and calculate values such as gravitational field strength, escape velocity, and other important physical quantities.
             </p>
+            <p>Tech Stack:</p>
             <div class="tags">
-                <p>Tech Stack:</p>
                 <span>Java</span>
                 <span>OPPS</span>
                 <span>Collection Framework</span>
@@ -100,8 +100,8 @@
             <p>
                 This portfolio is my second project, and I created it while learning from my mistakes and improving my web development skills. It may still have some mistakes or areas that need improvement, and you may have already realized that you are looking at it right now. 😄
             </p>
+            <p>Tech Stack:</p>
             <div class="tags">
-                <p>Tech Stack:</p>
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
@@ -113,26 +113,29 @@
     <section id="Contact" class="container">
         <h1>Contact me</h1>
         <form action="https://formsubmit.co/27138b1b6b39f8a9e0fcb1040eabfa31" method="POST" class="contact">
+            <input type="text" name="_honey" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://anandmanchala3737-web.github.io/Portfolio/thanks.html">
             <div class="form_contents">
-                            <div class="form_content">
+            <div class="form_content">
                 <lable for="name">FULL NAME</lable>
-                <input type="text" id="name" name="name" placeholder="Jhon">
+                <input type="text" id="name" name="name" placeholder="Jhon" required data-error="Pleace enter your name">
             </div>
             
             <div class="form_content">
                 <lable for="email">EMAIL ADDRESS</lable>
-                <input type="email" id="email" name="email" placeholder="Jhon@gmail.com">
+                <input type="email" id="email" name="email" placeholder="Jhon@gmail.com" required data-error="Pleace enter your email">
             </div>
             </div>
 
             <div class="form_content">
                 <lable for="subject">SUBJECT</lable>
-                <input type="text" id="subject" name="subject" placeholder="Your subject">
+                <input type="text" id="subject" name="subject" placeholder="Your subject" required data-error="Pleace enter your purpose">
             </div>
 
             <div class="form_content">
                 <lable for="textarea">YOUR MASSAGE</lable>
-                <textarea type="text" id="textarea" name="message" placeholder="Write your massage"></textarea>
+                <textarea type="text" id="textarea" name="message" placeholder="Write your massage" required data-error="Pleace write your message"></textarea>
             </div>
 
             <button type="submit" class="submit_btn">Send me message</button>

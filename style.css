@@ -134,7 +134,7 @@ a:hover{
     }
 }
 .container{
-    max-width: 1100px;
+    max-width: 100%;
     padding: 5rem 7%;
 }
 .container h1{
@@ -196,7 +196,7 @@ h1 span{
 #project{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap:30px;
+    gap:10px;
 }
 .project_block{
     width: 395.16px;
@@ -332,7 +332,7 @@ textarea:hover{
 }
 .social{
     margin-top: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-items: center;
 }
@@ -482,11 +482,20 @@ footer{
     height: 270px;
   }
 
-  /* .skill-tag {
-    width: 100%; /* 1 full-width column for skills */
-   */
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
 
   .submit_btn {
     width: 100%; /* Full-width submit button */
+  }
+  .social{
+    font-size: 1.2rem;
+  }
+  .social_icons{
+    font-size: 2rem;
   }
 }
