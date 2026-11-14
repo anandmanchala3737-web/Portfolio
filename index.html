@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">   -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input type="checkbox" id="ham_checkbox">
+    <label for="ham_checkbox" class="open_sidebar">
+        <!-- <img alt="menu" src="images/menu.png"> -->
+         <h1>Anand.</h1>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="32px" width="32px" fill="#e33e3"><path d="M6,36V33H42v3H6ZM6,25.5v-3H42v3H6ZM6,15V12H42v3H6Z"/></svg>
+    </label>
     <nav id="nav-bar">
+        <label for="ham_checkbox" class="close_sidebar">
+        <!-- <img alt="menu" src="images/menu.png"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="48px" width="48px" fill="#e33e3"><path d="M12.45,37.65l-2.1-2.1L21.9,24L10.35,12.45l2.1-2.1L24,21.9L35.55,10.35l2.1,2.1L26.1,24L37.65,35.55l-2.1,2.1L24,26.1L12.45,37.65Z"/></svg>
+        </label>
         <!-- <h1 href="#home" id="name">Anand.</h1> -->
-         <a href="#home" id="name"><h1>Anand.</h1></a>
+         <a href="#home" id="heroname"><h1>Anand.</h1></a>
         <ul class="nav_links">
             <li><a href="#home">Home</a></li>
             <li><a href="#About">About</a ></li>
