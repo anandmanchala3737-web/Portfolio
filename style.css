@@ -16,6 +16,7 @@ body{
 }
 .open_sidebar, .close_sidebar{
     display:none;
+    fill:rgb(36, 36, 218);;
 }
 .open_sidebar svg{
     padding-bottom: 10px;
