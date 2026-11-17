@@ -51,7 +51,7 @@ body{
 }
 .welcome span{
     color: transparent;
-    -webkit-text-stroke: 1px cyan;
+    /* -webkit-text-stroke: 1px cyan; */
     z-index: 2;
     /* animation: colorChange 1s infinite alternate; */
     animation: welcomeDisapper 1.6s ease 2s forwards;
