@@ -68,29 +68,6 @@ body{
         transform: translateX(100%);
     }
 }
-/* @keyframes colorChange{
-    0%{
-        color: white;
-    }
-    10%{
-        color: rgb(144, 224, 230);
-    }
-    25%{
-        color:#00ffff;
-    }
-    30%{
-        color:#35e0e0;
-    }
-    50%{
-        color:rgb(4, 216, 216);
-    }
-    75%{
-        color:#00aaff;
-    }
-    100%{
-        color:white
-    }
-} */
 @keyframes welcomeDisapper{
     to{
     opacity: 0;
@@ -184,7 +161,7 @@ a:hover{
     font-weight: 800;
 }
 #intro{
-    /* color:rgb(12, 12, 12); */
+    color:rgb(12, 12, 12);
     font-size: 4rem;
 }
 #hero-name{
@@ -248,7 +225,7 @@ a:hover{
     padding: 5rem 7%;
 }
 .container h1{
-    /* font-size: 2rem; */
+    font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -491,10 +468,25 @@ footer{
    ------------------------------------------ */
 @media screen and (max-width: 768px) {
     .welcome{
-        flex-direction: column;
-        font-size: 42px;
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 160px 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: ; */
+        justify-items: center;
+        align-items: center;
+        font-size: 150px;
         font-weight: 1000;
         gap:10px;
+    }
+    .E{
+        grid-column: -5/-4;
+        grid-row: 2/3;
+        align-self:start;
+    }
+    .M{
+        grid-row: 2/3;
+        grid-column: -3/-2;
+        align-self: start;
     }
   nav {
     padding: 1rem 5%;
@@ -574,10 +566,20 @@ footer{
    ------------------------------------------ */
 @media screen and (max-width: 480px) {
     .welcome{
-        flex-direction: column;
-        font-size: 45px;
-        font-weight: 800;
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-rows: ; */
+        
+        justify-items: center;
+        align-items: center;
+        font-size: 120px;
+        font-weight: 1000;
         gap:5px;
+    }
+    .E{
+        grid-row: 3 / 4;
+        grid-column: -3 / -2;
     }
     nav{
         flex-direction: column;
